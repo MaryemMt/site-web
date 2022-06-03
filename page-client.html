@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notre site</title>
+    <link rel="stylesheet" href="page-client.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+    <section class=" header " id="header ">
+        <div class="nav-bar ">
+            <div class="logo ">
+
+                <a href="# "> Location voiture
+            </div>
+            <div class="menu ">
+                <ul> 
+                    <li><a href="# "><i class="fa fa-user-circle "></i>client</a>
+                </li>
+                <li>
+                    <a href="# " calss="active ">acceuil</a>
+                </li>
+
+
+                <li>
+                    <a href="voiture à louer.php"> nos voitures </a>
+                </li>
+
+                <li>
+                    <a href="# "> mes réservations </a>
+                </li>
+                <li>
+                    <a href="deconnexion.php">déconnecter</a>
+                </li>
+                </ul>
+            </div>
+
+            <div class="social-media ">
+                <ul>
+                    <li>
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                    </li>
+                    <li>
+                        <a href="# "><i class="fa fa-twitter "></i></a>
+                    </li>
+                    <li>
+                        <a href="# "><i class="fa fa-instagram "></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero ">
+            <div class="row ">
+                <div class="left-sec ">
+                    <div class="content ">
+                        <h2> <span>TROUVEZ LA VOITURE  </span>
+                            <br> QUI VOUS CONVIENT</h2>
+                        <p>Nous avons beaucoup de voitures à choisir </p>
+                    </div>
+                    <button class="discover-btn ">
+                        <a href="# "> voir plus</a><span><i class="fa fa-arrow-circle-o-right "></i></span>
+                    </button>
+                </div>
+
+
+                <div class="right-sec ">
+                    <div class="my-car ">
+                        <div> <img src="img/v3-removebg-preview.png"></div>
+                        <div> <img src="img/v6-removebg-preview.png"></div>
+                        <div> <img src="img/v7-removebg-preview.png"></div>
+                        <div> <img src="img/v2-removebg-preview.png"></div>
+                        <div> <img src="img/v1-removebg-preview.png"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".my-car").slick({
+                autoplay: true,
+                dots: true,
+                speed: 1000,
+                customPaging: function(slider, i) {
+                    var thum = $(slider.$slider[i]).data();
+                    return '<a>' + (i + 1) + '</a>'
+
+                },
+            })
+        });
+    </script>
+</body>
+
+
+</html>

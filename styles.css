@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{font-size: 62.5%;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+li{
+    font-size: 2rem;
+}
+.main{
+background: rgb(42, 49, 44);
+color: white;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 60rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 2 1 40rem;
+}
+.active,ul li:hover{
+    background: #cfccc0;
+    border-radius: 3px;
+}
+nav .fa{
+    margin-right: 8px;
+}
+.menu {
+    display: none;
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    background: black;
+}
+.menu ul li {
+    display: block;
+}
+
+nav ul li:hover .menu{
+    display: block;
+    /* position: absolute;
+    background: rgb(42, 49, 44);;
+    margin-top: 15px;
+    margin-left: -15px; */
+}
+nav ul li:hover .menu ul{
+    display: block;
+    margin: 10px;
+
+}
+nav ul li:hover .menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+nav ul li:hover .menu ul li :last-child{
+    border-bottom: none;
+}
+nav ul li:hover .menu ul li a :hover{
+    color: #b2ff00;
+}
+
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: rgb(212, 212, 212);
+}
+a{
+    color: aliceblue;
+    padding: 10px;
+}
+.button{
+    border-radius: 7px;
+    background-color: rgba(141, 60, 94, 0.877);
+    font-size: medium;
+    font-style: oblique;
+    padding: 5px 15px;
+    color: white;
+}
+.car{
+    display: flex;
+    /* width: 90%; */
+}
+input{
+    width: 100%;
+}
